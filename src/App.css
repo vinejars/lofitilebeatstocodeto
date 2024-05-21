@@ -1,38 +1,34 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-image: url('https://64.media.tumblr.com/15a9d81e6c32fb648e37310a95b80e6b/tumblr_ppg0jgkFvp1xptjc0o1_1280.png');  
+  height: 100vh; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
 }
 
-.App-link {
-  color: #61dafb;
+
+.tile-point {
+  border: 1px solid; 
+  border-image: linear-gradient(rgb(148, 250, 255) 50%, white 50%, rgb(247, 153, 226) 54%, rgb(149, 71, 250));
+  border-image-slice: 1;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-color: rgba(220, 250, 255, 0.144);
+  color: black;
+  height: 1rem;
+  width: 1rem;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.connection {
+  background-image: linear-gradient(rgb(2, 112, 238), rgb(236, 51, 181));
+  width: 100%;
 }
+
+

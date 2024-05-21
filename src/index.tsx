@@ -1,15 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './components/App';
 import reportWebVitals from './reportWebVitals';
+import { TileContextProvider } from './framework/TileContext';
+import { PointContextProvider } from './framework/PointContext';
+import { ArchetypeContextProvider } from './framework/ArchetypeContext';
+import { ErrorModalContextProvider } from './framework/ErrorModalContext';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
+    <ErrorModalContextProvider>
+    <TileContextProvider>
+      <PointContextProvider>
+        <ArchetypeContextProvider>
     <App />
+    </ArchetypeContextProvider>
+    </PointContextProvider>
+    </TileContextProvider>
+    </ErrorModalContextProvider>
   </React.StrictMode>
 );
 
